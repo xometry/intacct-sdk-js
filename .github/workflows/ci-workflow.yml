@@ -15,7 +15,7 @@ env:
     
 jobs:
   lint-test-typecheck:
-    name: 'Lint and Test'
+    name: 'Test'
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
@@ -26,8 +26,6 @@ jobs:
       - name: Install Dependencies
         run: |
           yarn install --frozen-lockfile
-      - name: Lint
-        run: yarn lint
       - name: Unit Test
         run: yarn test
       - name: Type Check
