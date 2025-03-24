@@ -40,7 +40,7 @@ yarn unlink ~/path-to-intacct-sdk-js/folder
 * If you are an on-call developer and need to route an alert about this service, in OpsGenie please route alerts to the "Financial Services and Supplies Domains" team.
 * If you have questions, the primary slack channel for discussion is [#order-fulfillment-engineering](https://xometry.slack.com/archives/C01V0FCEXBR), and you can tag @revenue-and-payments-tech
 
-## Resources
+## Resourcess
 
 * [SDK Guides][sdk-homepage] - Getting started with the SDK
 * [SDK Reference][sdk-reference] - Code-level reference for the SDK
