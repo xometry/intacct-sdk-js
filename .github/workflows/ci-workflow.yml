@@ -19,6 +19,9 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
+      - name: Conditionally Install Yarn for local Github Actions Emulator ACT
+        if: ${{ env.GITHUB_ACTOR == 'nektos/act' }}
+        run:  npm -g install yarn
       - uses: actions/setup-node@v3
         with:
           node-version: 18

@@ -65,3 +65,6 @@ dist/
 
 # Docs out folder
 doc/
+
+# ACT Config File https://nektosact.com/usage/index.html#configuration-file
+.actrc
