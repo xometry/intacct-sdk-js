@@ -49,9 +49,6 @@ jobs:
       - uses: actions/download-artifact@v4
       - uses: cycjimmy/semantic-release-action@v3
         with:
-          branches: |
-            ['RP-665-d']
-          dry_run: true
           semantic_version: 19.0.3
           extra_plugins: |
             @semantic-release/release-notes-generator
