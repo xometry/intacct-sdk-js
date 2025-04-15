@@ -1,3 +1,10 @@
+# [2.7.0](https://github.com/xometry/intacct-sdk-js/compare/v2.6.0...v2.7.0) (2025-04-15)
+
+
+### Features
+
+* Merge pull request [#19](https://github.com/xometry/intacct-sdk-js/issues/19) from xometry/whoa ([bc08332](https://github.com/xometry/intacct-sdk-js/commit/bc0833241b02fbdcbf53f5a303623f451a3bee9a))
+
 # [2.6.0](https://github.com/xometry/intacct-sdk-js/compare/v2.5.0...v2.6.0) (2025-03-21)
 
 
