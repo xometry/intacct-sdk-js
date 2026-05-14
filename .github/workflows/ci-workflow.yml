@@ -13,6 +13,9 @@ on:
 env:
   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     
+permissions:
+  contents: read
+
 jobs:
   lint-test-typecheck:
     name: 'Test'
