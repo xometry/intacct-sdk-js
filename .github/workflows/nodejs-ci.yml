@@ -9,6 +9,9 @@ on:
 env:
   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         
+permissions:
+  contents: read
+
 jobs:
   build_and_test:
     runs-on: ubuntu-latest
