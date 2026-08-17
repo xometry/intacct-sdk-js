@@ -28,13 +28,13 @@ jobs:
         with:
           egress-policy: audit
 
-      - uses: actions/setup-node@3235b876344d2a9aa001b8d1453c930bba69e610 # v3.9.1
+      - uses: chainguard-actions/actions-setup-node@a49e154d6f0fd6d9d86f407bca5dd16191c8c1b2 # v3.9.1
         with:
           node-version: 18
       - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
       - run: yarn install
       - run: yarn build
-      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+      - uses: chainguard-actions/actions-upload-artifact@ae6fbddde3b6b879793bec6dd9a74a07077fe200 # v4.6.2
         with:
           name: dist
           path: dist
@@ -47,11 +47,11 @@ jobs:
         with:
           egress-policy: audit
 
-      - uses: actions/setup-node@3235b876344d2a9aa001b8d1453c930bba69e610 # v3.9.1
+      - uses: chainguard-actions/actions-setup-node@a49e154d6f0fd6d9d86f407bca5dd16191c8c1b2 # v3.9.1
         with:
           node-version: 14
       - uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3.6.0
-      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+      - uses: chainguard-actions/actions-download-artifact@ee0fd4035156db4b7f5f67e3a751b1e3ad3e216a # v4.3.0
       - uses: cycjimmy/semantic-release-action@8e58d20d0f6c8773181f43eb74d6a05e3099571d # v3.4.2
         with:
           semantic_version: 19.0.3
