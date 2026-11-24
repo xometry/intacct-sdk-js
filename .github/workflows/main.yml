@@ -23,10 +23,11 @@ jobs:
     needs: ci
     runs-on: ubuntu-22.04
     steps:
-      - name: Harden the runner (Audit all outbound calls)
-        uses: step-security/harden-runner@05e31511f85b41b11d1cf0ef85d0992719546e2c # v2.21.0
+      - name: Harden the runner
+        uses: xometry/the-forge/harden-runner@harden-runner-v1
         with:
           egress-policy: audit
+          jfrog_token: ${{ secrets.JFROG_TOKEN }}
 
       - uses: chainguard-actions/actions-setup-node@a49e154d6f0fd6d9d86f407bca5dd16191c8c1b2 # v3.9.1
         with:
@@ -42,10 +43,11 @@ jobs:
     needs: [build]
     runs-on: ubuntu-22.04
     steps:
-      - name: Harden the runner (Audit all outbound calls)
-        uses: step-security/harden-runner@05e31511f85b41b11d1cf0ef85d0992719546e2c # v2.21.0
+      - name: Harden the runner
+        uses: xometry/the-forge/harden-runner@harden-runner-v1
         with:
           egress-policy: audit
+          jfrog_token: ${{ secrets.JFROG_TOKEN }}
 
       - uses: chainguard-actions/actions-setup-node@a49e154d6f0fd6d9d86f407bca5dd16191c8c1b2 # v3.9.1
         with:
